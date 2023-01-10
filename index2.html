@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Robovanza 2023 - Robotics Fest of CBIT Robotics Club</title>
-
+	<script src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/expo.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -101,7 +101,6 @@
 
 	<section id="home">
 		<div class="hero-unit">
-			<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1702" height="1422"></canvas></div>
 			<div class="text-vertical-center">
 
 				<div class="container er">
@@ -113,11 +112,12 @@
 
 					<center>
 
-						<h1 class="glow" style="font-size: 35px;margin-top: 70px; padding-bottom: 0px; color: 9D0000"> <b>The Event is going to begin soon</b> </h1>
-						<hr class="h1-underline">
-						<h1 class="glow" style="font-size: 35px;margin-top: 70px; padding-bottom: 0px; color: 9D0000;"> <b>31st of January and 1st of
+						<h1 class="glow" style="font-size: 35px;margin-top: 80px; padding-bottom: 0px; color: 9D0000"> <b>The Event is going to begin soon</b> </h1>
+						
+						<h1 class="glow" style="font-size: 35px;margin-top: 60px; padding-bottom: 0px; color: 9D0000;"> <b>31st of January and 1st of
 							February, 2023</b> </h1>
-						<hr class="h1-underline">
+						
+						<div id="timer"></div>
 
 
 						<a class="hero-unit-btn" href="https://forms.gle/DeQ3YMSGPyk3LqPQA" id="register_button" style="border-radius: 5%; font-family: 'Noto sans';">Register for Events!</a>
@@ -145,8 +145,9 @@
 		<div class="blue">
 
 		<h1 class="glow" style="color: FF8500;">
-			<center id="about_robovanza1">About ROBOVANZA</center>
+			<center id="about_robovanza1" class="glow">About ROBOVANZA</center>
 		</h1>
+		<hr class="h1-underline">
 		<p>
 			</p><center class="width60" style="color: #131313;font-size: large;">
                 <b>ROBOTICS AND INNOVATION CLUB of CBIT has come to
@@ -162,8 +163,8 @@
 	<div class="curve dark">
 		<p>
 			
-			</p><center class="width60" style="color: 8D0061;font-size: large;"><b>“Knowledge when shared, becomes Wisdom” <br>So we wish to see you all on 31st of January and
-					1st of Febraury 2023 <br> Come explore and share. </b></center>
+			</p><center class="width60" style="color: black;font-size: large;"><b>“Knowledge when shared, becomes Wisdom” <br>So we wish to see you all on 31st of January and
+					1st of February 2023 <br> Come explore and share. </b></center>
 		<p></p>
 		<img class="image1" src="images/ieee_logo.png" alt="ieee logo">
 		<a href="https://www.cbit.ac.in/"> <img class="image1" src="images/cbitlogo.png" alt="cbitlogo"></a>
@@ -171,12 +172,12 @@
 	</section>
 	<section style="padding: 60px 0px;" id="events_robovanza">
 
-		<h1 class="glow" id="events1" style="color: FF8500;">Events</h1>
+		<h1 class="glow" id="events1">Events</h1>
 		<hr class="h1-underline">
-		<center style="color: #000; font-size: x-large;"> Join us for unforgettable thrill of robotics and ameliorate your talent in
+		<center style="color: #000; font-size: x-large; font-weight: 500;"> Join us for an unforgettable thrill of robotics and ameliorate your talent in
 				ROBOVANZA 2K23,<br> The robotics fest of CBIT.
                 <br>
-			<b>To all those who are awaiting to join us, tickets are now available.</b>	<br>
+			<b>Grab your tickets here!</b>	<br>
 			</p>
 		</center>
 		<div class="card-container" data-wow-delay="0.1s" data-wow-duration="2s">
@@ -184,12 +185,12 @@
 <div>
 			<!-- <a href="pdf/blastIt.pdf"> -->
 				<div class="card-primary ">
-					<div class="service-item"><img id="svg1" src="images/battlefield.png" alt="battlefield">
+					<div class="service-item"><img id="svg1" src="images/football.svg" alt="football">
 						<br><br>
-						<h5 class="alt-font">ROBO SOCCER<br><br>Pop the baloons to conquer. <br> </h5>
+						<h5 class="alt-font">ROBO SOCCER<br><br>Set your goals at the goal post. <br> </h5>
 						<div class="service-desc">
-							<p> How will robots transform human warfare? To find answers, Build your own robot that can
-								pop the baloons of other opponents and become a conquerer. </p>
+							<p>  All you soccer fans hold your breath, as we present to you soccer with an entirely new dimension with ROBO SOCCER.
+								Get your soccer playing bots ready to compete on the soccer arena and bring out the hidden RONALDO,MESSI in your bots.</p>
 						</div>
 					</div>
                     <div class="card-primary-div">
@@ -204,11 +205,14 @@
             <div>
 			<!-- <a href="pdf/roboRace.pdf"> -->
 				<div class="card-primary">
-					<div class="service-item"><img id="svg1" src="images/robothon.png" alt="battlefield">
+					<div class="service-item"><img id="svg1" src="images/rcgrand.png" alt="rcgrand">
 						<br><br>
 						<h5 class="alt-font">GRAND PRIX NITRO <br><br> Beat the deadline, to be the champion. <br></h5>
 						<div class="service-desc">
-							<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus voluptatibus sequi. Reiciendis natus odio placeat ratione vitae at delectus repellat! Cumque dolor dolores mollitia facere debitis voluptatum. Voluptatum, rem!
+							<p> The way you enter,proceed and reveal your speed to
+								others beings here at the enthralling event of “NitroRace”. The
+								fast speeds, tight turns, and exciting collisions in our hot wheels on track.
+								takes place
                             </p>
 						</div>
 					</div>
@@ -224,12 +228,11 @@
         <div>
 			<!-- <a href="pdf/allTerrain.pdf"> -->
 				<div class="card-primary">
-					<div class="service-item"><img id="svg1" src="images/robot_wheels.svg" alt="robot_wheels">
+					<div class="service-item"><img id="svg1" src="images/drone.png" alt="drone_racing">
 						<br><br>
-						<h5 class="alt-font">DRONE RACING<br> <br>Lead your robot where no robot has ever gone
-							before.<br></h5>
+						<h5 class="alt-font">DRONE RACING<br> <br>Float like a Cadillac, sting like a Beemer.<br></h5>
 						<div class="service-desc">
-							<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est eaque voluptas maiores sed repudiandae voluptatum, ratione incidunt, necessitatibus, autem iusto sapiente cum. Nam officiis beatae quibusdam aperiam molestiae, fugit esse fuga ab non sit.</p>
+							<p> Drone racing....the word drone reminds the sound of bee "buzz", push the throttle stick all the way up and pitch forward into the competition to put yourself in the fastest lap possible around the track.</p>
 
 						</div>
 					</div>
@@ -245,15 +248,12 @@
         <div>
 			<!-- <a href="pdf/tugOfWar.pdf"> -->
 				<div class="card-primary ">
-					<div class="service-item"><img id="svg1" src="images/knot.svg" alt="tug of war">
+					<div class="service-item"><img id="svg1" src="images/line.svg" alt="line">
 						<br><br>
-						<h5 class="alt-font"> LINE FOLLOWER<br><br>For the strongest of the strong. <br></h5>
+						<h5 class="alt-font"> LINE FOLLOWER<br><br>Finish the line to shine. <br></h5>
 						<div class="service-desc">
-							<p>Imagine the adrenaline rush of fighting in a tug of war. Exciting isn't it? Now think
-								what it would be like if robots played the sport. Tug of War is for the strongest among
-								the strong. You are required to build a robot which will pull so hard that your opponent
-								decides to let go their hope of winning. Think you're up for the challenge? Start
-								building your Tug of War robot now!</p>
+							<p>Line follower....tracking the line is easy but it's gets tricky when junctions confuse the bots to take a wrong route. 
+								So tell your bot to follow the best line to complete the path in fastest time!</p>
 						</div>
 					</div>
                     <div class="card-primary-div">
@@ -267,14 +267,13 @@
     <div>
 			<!-- <a href="pdf/roboSoccer.pdf"> -->
 				<div class="card-primary">
-					<div class="service-item"><img id="svg1" src="images/football.svg" alt="football">
+					<div class="service-item"><img id="svg1" src="images/robot_wheels.svg" alt="robo_rover">
 						<br><br>
-						<h5 class="alt-font">ROBO ROVER<br><br>Set your goals at the goal post.<br></h5>
+						<h5 class="alt-font">ROBO ROVER<br><br> Lead your robot where no robot has ever gone
+							before.<br></h5>
 						<div class="service-desc">
-							<p>Wanna feel like Messi? then your at the right event.
-								Build a bot and play soccer. Not just handling the ball, but tackle the opponent’s
-								defender bot and make a goal .
-								‘To become successful set your goals' at the goal post!</p>
+							<p>All terrain.... build a bot and name it the king of land as it is going to conquer all types of land with ease.
+								 Control your mini rover to cruise through the track in best time</p>
 
 						</div>
 					</div>
@@ -290,15 +289,13 @@
     <div>
 			<!-- <a href="pdf/roboSeesaw.pdf"> -->
 				<div class="card-primary">
-					<div class="service-item"><img id="svg1" src="images/seesaw.svg" alt="bridge">
+					<div class="service-item"><img id="svg1" src="images/robo_wars.svg" alt="bridge">
 						<br><br>
-						<h5 class="alt-font">ROBO WARS<br><br>Falling is the first step to success doesn't
-							work always.<br></h5>
+						<h5 class="alt-font">ROBO WARS<br><br>Watch your bots battle to death as sparks fly all around the arena.<br></h5>
 						<div class="service-desc">
-							<p>Crossing bridges is always fun...why not make your bot do it this time? The bridge is
-								surrounded by pits on either side with challenges filled. Let your bot complete this
-								adventure itself.
-								Remember ‘falling is the first step to success ‘ doesn’t work here!</p>
+							<p>Witness sparks fly as metal crushes metal in the most glorious battles interspersed with magnificent artist performances for non-stop entertainment
+
+							</p>
 
 						</div>
 					</div>
@@ -314,50 +311,43 @@
 	</section>
 
 	<section style="padding: 60px 0px;" id="team">
-		<h1 class="glow" id="events1" style="color: FF8500;">Our Team</h1>
+		<h1 class="glow" id="events1" style="color: black;">Our Team</h1>
 		<hr class="h1-underline">
 		<div class="card-container" data-wow-delay="0.1s" data-wow-duration="2s">
 			<div class="team-card">
 				<img class="team-image" src="images/sriram2.jpeg" alt="fb">
 				<div class="team-name">
-					<h4>P.Nikhil Chowdary</h4> President<p><i class="fa fa-phone" aria-hidden="true"></i>8106274309</p>
+					<h4>P.Nikhil Chowdary</h4> President<p><i class="fa fa-phone" aria-hidden="true"></i> 8106274309</p>
 				</div>
 			</div>
 			<div class="team-card">
 				<img class="team-image" src="images/Sagar.jpg" alt="ashish">
 				<div class="team-name">
 					<h4>Vandan Babu</h4> Vice President <br>
-					<p><i class="fa fa-phone" aria-hidden="true"></i>9848885118</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> 9848885118</p>
 				</div>
 			</div>
 			<div class="team-card">
 				<img class="team-image" src="images/Vijayendra.jpg" alt="satish">
 				<div class="team-name">
 					<h4>M.Jahnavi Reddy</h4>Treasurer<br>
-					<p><i class="fa fa-phone" aria-hidden="true"></i>####</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> 6304168491</p>
 					<!-- NUMBER NOT IN GROUP -->
 				</div>
 			</div>
 			<div class="team-card">
 				<img class="team-image" src="images/Deekshith.jpg" alt="fb">
 				<div class="team-name">
-					<h4>Vikas</h4>Secretary<p><i class="fa fa-phone" aria-hidden="true"></i>9542542034</p>
+					<h4>Vikas</h4>Secretary<p><i class="fa fa-phone" aria-hidden="true"></i> 9542542034</p>
 				</div>
 			</div>
-			<!-- <div class="team-card">
-				<img class="team-image" src="images/Saikiran Kolloju.jpg" alt="Srinivas">
-				<div class="team-name">
-					<h4>Ayushi Chaturvedi</h4>Event Head<br>
-					<p><i class="fa fa-phone" aria-hidden="true"></i>####</p>
-				</div>
-			</div> -->
 		</div>
 		
 
 		<div class="container text-center">
 
 			<!-- ADD COLOUR CODE TO THE HEADING -->
-			<h1 class="glow" id="events1" style="color: FF8500;">Robovanza Heads</h1>
+			<h1 class="glow" id="events1" style="color: black;">Robovanza Heads</h1>
 					<hr class="h1-underline">
 					<div class="card-container" data-wow-delay="0.1s" data-wow-duration="2s">
 						<div class="team-card">
@@ -392,13 +382,7 @@
 								<h4>P.Dixith</h4>Head of Event Management
 							</div>
 						</div>
-						<div class="team-card">
-							<img class="team-image" src="images/anjali.jpeg" alt="fb">
-							<div class="team-name">
-								<h4>####</h4>Head of Hospitality
-							</div>
-							<!-- ADD NAME WHEN WE GET IT -->
-						</div>
+						
 						</div>
 		</div>
 		<br>

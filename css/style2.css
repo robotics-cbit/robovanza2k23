@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #FFB300;
   --primary-dark-color: #000000;
   --secondry-color: #AA00FF;
@@ -6,7 +6,7 @@
   --orange-dark-color: #E64A19;
   --blue-color: #1565c0;
   --blue-dark-color: #0a4e9b;
-}
+} */
 
 
 
@@ -15,7 +15,7 @@
   border-color: #93a9c5;
   border-radius: 12px;
   background-image: linear-gradient(#93a9c5, #516f92);
-  /* box-shadow:1px 1px  rgba(255, 0, 0, 0.3); */
+
 }
 
 .card-primary-btn:hover {
@@ -29,10 +29,6 @@
   align-items: flex-end;
 }
 
-/* .blue {
-    /* background: #3c31dd; 
-    background: #6fcfe1;
-  } */
 
 .red {
   background: #dd3f31;
@@ -43,47 +39,6 @@
   overflow: hidden;
 }
 
-/* .dark {
-    background: #0f0f10;
-  } */
-
-/* Curved bg with plain CSS */
-/*
-   .curve {
-    position:relative; 
-    height:fit-content;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-  }
-
-  .curve::before {
-    content: '';
-    display: block;
-    position:;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
-  }
-
- .curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1; 
-  }*/
-
-
-/* p{
-    background-color: 17FAF4;
-  } */
 
 @font-face {
   font-family: batma;
@@ -135,6 +90,11 @@
   left: 50%;
 }
 
+#svg1 {
+  top: 10px;
+  height: 60px;
+  ;
+}
 
 .image1 {
   height: 250px;
@@ -157,7 +117,7 @@ h3 {
 .about {
   /* margin: auto; */
   /* color: #525252; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   /*    background-color: #131313;*/
   /* padding: 20px; */
@@ -220,10 +180,13 @@ h3 {
 #about_robovanza1 {
   font-size: 60px;
   padding-top: 30px;
+  color: black;
+  font-weight: 800;
 }
 
 #events1 {
   font-size: 60px;
+  font-weight: 800;
 
 }
 
@@ -231,20 +194,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  /* background-color: #131313; */
+  background-color: #00246E;
 
   /* background-image: url('../images/wavehaikei.png'); */
+  /* background-color: pink; */
+  /* background-image: linear-gradient(#00246E, #00B2FF); */
 
-  background-image: linear-gradient(#6fcfe1, #00B2FF);
-
-  background-color: #6fcfe1;
+  /* background-color: #6fcfe1; */
   height: 100%;
 }
 
-#particles-js {
-  height: 100vh;
-  background: transparent;
-}
 
 .navbar-right {
   float: right;
@@ -268,7 +227,7 @@ section {
 
 .team-name {
   margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -276,14 +235,14 @@ section {
 }
 
 .team-des {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #525252;
 }
 
 .list-des {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
 }
 
@@ -483,14 +442,14 @@ section {
     height: 100vh;
     /* background-image: url("https://cdn.discordapp.com/attachments/588757704948973604/602734581619097603/Main.jpg"); */
     /* background-image: url("/images/background.jpg"); */
-    background-image: url("https://c.wallhere.com/photos/e2/68/digital_art_glowing_men_robot_technology_sports_athletes_black_background-101006.jpg!d");
-    background-position: center center;
+    background-image: url("https://images4.alphacoders.com/112/1127691.jpg");
+    /* background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: 80%;
     background-repeat: no-repeat;
     -o-background-size: cover;
-    overflow: hidden;
+    overflow: hidden; */
 
   }
 
