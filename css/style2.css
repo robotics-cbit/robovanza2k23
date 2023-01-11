@@ -116,7 +116,7 @@ h3 {
 .about {
   /* margin: auto; */
   /* color: #525252; */
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   font-weight: 400;
   /*    background-color: #131313;*/
   /* padding: 20px; */
@@ -151,7 +151,7 @@ h3 {
 
 .glow {
   font-size: 80px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
 
   /*    color: red;*/
   text-align: center;
@@ -226,7 +226,7 @@ section {
 
 .team-name {
   margin-top: 10px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -234,14 +234,14 @@ section {
 }
 
 .team-des {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   font-size: 16px;
   font-weight: 400;
   color: #525252;
 }
 
 .list-des {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   font-size: 18px;
 }
 
@@ -592,8 +592,8 @@ h4 {
 }
 
 .h1-underline {
-  border-top: 4px solid #c0495c;
-  width: 55px;
+  border-top: 4px solid #D40E0E;
+  width: 100px;
   margin-top: 10px;
 }
 

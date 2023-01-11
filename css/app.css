@@ -1,5 +1,5 @@
 * {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 #main-head {
@@ -32,4 +32,17 @@
 
 #card-button {
     font-family: 'Noto Sans', sans-serif;
+}
+
+.service-desc p {
+    color: white;
+}
+
+.glow2 {
+    font-size: 80px;
+
+    text-align: center;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
